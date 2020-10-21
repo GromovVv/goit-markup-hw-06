@@ -294,7 +294,7 @@
           </ul>
         </address>
       </div>
-      <div>
+      <div class="footer-link-list">
         <h2 class="footer-title title text-common">ПРИСОЕДИНЯЙТЕСЬ</h2>
         <ul class="footer-list">
           <li class="footer-list-item"><a class="footer-list-link" href="https://www.instagram.com/">
@@ -319,6 +319,16 @@
             </a></li>
         </ul>
       </div>
+      <div class="form-footer">
+        <h2 class="footer-title title text-common">Подпишитесь на рассылку</h2>
+        <form action="" class="footer-form-area">E-mail</form>
+        <button class="subscribe" type="button">
+          Подписаться
+          <svg class="icon-send-svg">
+            <use href="./images/icon-svg/sprite.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -328,6 +338,34 @@
           <use href="./images/icon-svg/sprite.svg#close-btn"></use>
         </svg>
       </button>
+      <div class="modal-form">
+        <h2 class="title title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" method="GET" class="contact-form">
+
+          <div class="user-name-wrap">
+            <label for="user-name"><span class="icon-input-username"></span>Имя</label>
+            <input type="text" class="contact-form-input user-name" name="user-name" id="user-name" required minlength="2">
+
+          </div>
+
+          <!-- <input type="tel" class="contact-form-input" name="user-tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"> -->
+          <label for="user-tel">Телефон</label>
+          <input type="tel" class="contact-form-input" name="user-tel" id="user-tel" required>
+
+          <label for="user-email">Почта</label>
+          <input type="email" class="contact-form-input" name="user-email" id="user-email" required>
+
+          <label for="user-comment">Комментарий</label>
+          <textarea class="contact-form-input contact-form-massage" name="user-comment" id="user-comment" placeholder="Введите текст" minlength="10"></textarea>
+
+          <div class="licence-check">
+            <input class="checkbox-item" type="checkbox" required>
+            <p class="licence-text">Соглашаюсь с рассылкой и принимаю <a class="link" href="" >Условия договора</a></p>
+          </div>
+
+          <button type="submit" class="btn form-submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
