@@ -737,6 +737,7 @@ pointer-events: none;
 .modal-form-policy {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -767,7 +768,6 @@ background-size: contain;
 background-position: center;
 border: 1px solid #2196F3;
 border-radius: 4px;
-
 }
 
 .modal-form-link {
