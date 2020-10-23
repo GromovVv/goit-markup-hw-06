@@ -763,8 +763,9 @@ pointer-events: none;
 .modal-form-check:checked + .modal-form-policy::before {
 background-image: url(../images/icon-svg/licence-check.svg);
 background-repeat: no-repeat;
+background-size: contain;
 background-position: center;
-border: 1px solid var(--accent-color);
+border: 1px solid #2196F3;
 border-radius: 4px;
 
 }
